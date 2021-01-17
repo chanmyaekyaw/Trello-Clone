@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trello Clone</title>
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbarOne d-flex justify-content-between">
+      <div class="navOne d-flex">
+        <button class="btn btn-sm text-light m-1">
+          <i class="fa fa-th"></i>
+        </button>
+        <button class="btn btn-sm text-light my-1">
+          <i class="fa fa-home"></i>
+        </button>
+        <button class="btn btn-sm text-light m-1 fw-bold">
+          <i class="fab fa-trello"></i>&nbsp;&nbsp;Boards&nbsp;
+        </button>
+        <div class="nav-item">
+          <input
+            class="search form-control form-control-sm mt-1"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </div>
+      </div>
+      <div class="logo d-flex mx-auto mt-1">
+        <a id="trello-link" href="https://trello.com"
+          ><i class="fab fa-trello"></i> Trello</a
+        >
+      </div>
+      <div class="navTwo d-flex">
+        <button class="btn btn-sm text-light m-1">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button class="btn btn-sm text-light my-1">
+          <i class="fa fa-info-circle"></i></button
+        ><button class="btn btn-sm text-light m-1">
+          <i class="fa fa-bell"></i>
+        </button>
+        <button class="profile my-1">
+          <img
+            src="./assets/image.JPG"
+            class="profilePic img-fluid rounded-circle"
+            alt="profile"
+          />
+        </button>
+      </div>
+    </nav>
+    <!-- ...................................................... -->
+    <nav class="navbar navbarTwo d-flex justify-content-between">
+      <div class="d-flex align-items-center">
+        <h4 class="fw-bold">Trello Clone</h4>
+        <button class="btn btn-sm text-dark my-1">
+          <i class="far fa-star"></i>
+        </button>
+        <h5 class="fw-normal">Private Team</h5>
+        <button class="btn btn-sm text-dark m-1 fw-normal">
+          <i class="fa fa-user-friends"></i>&nbsp;&nbsp;Team Visible&nbsp;
+        </button>
+        <div class="members ml-5">
+          <img
+            src="./assets/psj.jpeg"
+            class="img-fluid rounded-circle"
+            alt="psj"
+          />
+          <img
+            src="./assets/cew.jpg"
+            class="img-fluid rounded-circle"
+            alt="cew"
+          />
+          <img
+            src="./assets/pbg.jpg"
+            class="img-fluid rounded-circle"
+            alt="bpg"
+          />
+          <img
+            src="./assets/image.JPG"
+            class="img-fluid rounded-circle"
+            alt="cmk"
+          />
+        </div>
+        <button class="btn btn-sm text-dark">Invite</button>
+      </div>
+      <div class="d-flex align-items-center">
+        <button class="btn btn-sm text-dark m-1">
+          <i class="fab fa-github"></i>&nbsp;&nbsp;repos&nbsp;
+        </button>
+        <button class="btn btn-sm text-dark my-1">
+          <i class="fas fa-concierge-bell"></i>&nbsp;&nbsp;Butler&nbsp;
+        </button>
+        <button class="btn btn-sm text-dark m-1">
+          <i class="far fa-ellipsis-h"></i>&nbsp;&nbsp;Show Menu&nbsp;
+        </button>
+      </div>
+    </nav>
+    <!-- .......................................................... -->
+    <div class="board row">
+      <div class="card m-3" style="width: 17rem; height: 30rem">
+        <div class="d-flex align-items-center justify-content-between">
+          <h5 class="pt-2" style="font-size: 14px">Trello Databases Changes</h5>
+          <button class="btn btn-sm text-muted m-1">
+            <i class="far fa-ellipsis-h"></i>
+          </button>
+        </div>
+
+        <div style="overflow: auto">
+          <div class="cardBody my-1">
+            <img
+              class="img-fluid rounded"
+              src="./assets/trello1.jpg"
+              alt="pic"
+              style="height: 10rem; width: 17rem"
+            />
+            <p class="m-1">[Create]&nbsp;Trello</p>
+            <button class="btn btn-sm">
+              <i class="fal fa-align-left"></i>
+            </button>
+            <button class="btn btn-sm">
+              <i class="fal fa-paperclip"></i>&nbsp;2
+            </button>
+            <button class="btn btn-sm">
+              <i class="fal fa-check-square"></i>&nbsp;0/3
+            </button>
+          </div>
+
+          <div class="cardBody my-1">
+            <div class="implementLine m-2"></div>
+            <p class="m-1">[Create]&nbsp;Trello&nbsp;2020-05-18</p>
+            <button class="btn btn-sm">
+              <i class="fal fa-align-left"></i>
+            </button>
+            <button class="btn btn-sm">
+              <i class="fal fa-paperclip"></i>&nbsp;1
+            </button>
+          </div>
+          <div class="cardBody my-1">
+            <div class="implementLine m-2"></div>
+            <p class="m-1">[Create]&nbsp;Trello&nbsp;2020-05-22</p>
+            <button class="btn btn-sm">
+              <i class="fal fa-align-left"></i>
+            </button>
+            <button class="btn btn-sm">
+              <i class="fal fa-paperclip"></i>&nbsp;1
+            </button>
+          </div>
+          <div class="cardBody my-1">
+            <div class="implementLine m-2"></div>
+            <p class="m-1">[Create]&nbsp;Trello&nbsp;2020-06-10</p>
+            <button class="btn btn-sm">
+              <i class="fal fa-align-left"></i>
+            </button>
+            <button class="btn btn-sm">
+              <i class="fal fa-paperclip"></i>&nbsp;2
+            </button>
+          </div>
+        </div>
+        <div class="d-flex my-2">
+          <button class="addCard btn">
+            <i class="fal fa-plus"></i>&nbsp;Add another Card
+          </button>
+          <button class="btn">
+            <i class="fas fa-clipboard-list"></i>
+          </button>
+        </div>
+      </div>
+      <!-- ............. -->
+      <div class="card m-3" style="width: 17rem; height: auto !important">
+        <div class="d-flex align-items-center justify-content-between">
+          <h5 class="pt-2" style="font-size: 14px">Trello REST API</h5>
+          <button class="btn btn-sm text-muted m-1">
+            <i class="far fa-ellipsis-h"></i>
+          </button>
+        </div>
+
+        <div style="overflow: auto">
+          <div class="cardBody my-1">
+            <p class="m-1">Backend Local Server</p>
+            <button class="btn btn-sm">
+              <i class="fal fa-align-left"></i>
+            </button>
+            <button class="btn btn-sm">
+              <i class="fal fa-paperclip"></i>&nbsp;1
+            </button>
+            <button class="btn btn-sm">
+              <i class="fa fa-github"></i>&nbsp;1
+            </button>
+          </div>
+          <div class="cardBody my-1">
+            <p class="m-1">[Create]&nbsp;Trello&nbsp;2020-05-22</p>
+            <button class="btn btn-sm">
+              <i class="fal fa-align-left"></i>
+            </button>
+            <button class="btn btn-sm">
+              <i class="fal fa-paperclip"></i>&nbsp;1
+            </button>
+          </div>
+        </div>
+        <div class="d-flex my-2">
+          <button class="addCard btn">
+            <i class="fal fa-plus"></i>&nbsp;Add another Card
+          </button>
+          <button class="btn">
+            <i class="fas fa-clipboard-list"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

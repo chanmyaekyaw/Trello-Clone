@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background-image: url(../assets/trello.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.navbarOne {
+  background-color: rgba(0, 0, 0, 0.466);
+  padding: 0;
+  max-height: 40px;
+}
+.navbarOne .btn {
+  background-color: rgba(255, 255, 255, 0.274) !important;
+  font-family: "Roboto", sans-serif;
+  box-shadow: none !important;
+}
+.btn:hover {
+  opacity: 0.7;
+  transition: all 100ms ease-in;
+}
+.btn i {
+  /* font-size: 18px; */
+}
+.search {
+  background-color: rgba(255, 255, 255, 0.274) !important;
+  border: transparent !important;
+  box-shadow: none !important;
+}
+.search:hover {
+  opacity: 0.7;
+  transition: all 100ms ease-in;
+}
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important; /* 50% of your logo width */
+  display: block;
+}
+.logo a {
+  text-align: center !important;
+  outline: none;
+  color: #d1dad8;
+  text-decoration: none;
+  justify-content: center;
+}
+#trello-link {
+  opacity: 0.5;
+}
+#trello-link:hover {
+  color: rgba(255, 255, 255, 0.904);
+  opacity: 0.7;
+  transition: all 100ms ease-in;
+}
+.profile {
+  background-color: transparent !important;
+  border: none;
+  border-radius: 50% !important;
+}
+.profilePic {
+  min-height: 32px;
+  max-height: 32px;
+  min-width: 32px;
+  max-width: 32px;
+  border-radius: 50%;
+}
+.navbarTwo {
+  max-height: 45px;
+}
+.navbarTwo h4 {
+  color: #192a4d;
+  margin-left: 30px;
+  margin-right: 20px;
+  font-size: 18px;
+}
+.navbarTwo .btn {
+  background-color: rgba(255, 255, 255, 0.384) !important;
+  font-family: "Roboto", sans-serif;
+  box-shadow: none !important;
+  color: #192a4d;
+}
+.navbarTwo h5 {
+  color: #192a4d;
+  margin-left: 30px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+.members {
+  margin-left: 20px;
+  margin-right: 30px;
+}
+.members img {
+  min-height: 32px;
+  max-height: 32px;
+  min-width: 32px;
+  max-width: 32px;
+  border-radius: 50%;
+  margin: 0 !important;
+}
+/* ............................................ */
+.card {
+  background-color: #ebecf0 !important;
+}
+p {
+  font-size: 14px;
+}
+.card .btn {
+  background-color: transparent !important;
+  font-family: "Roboto", sans-serif;
+  box-shadow: none !important;
+  color: #2f31359f;
+}
+.cardBody {
+  background: #fff;
+  border-radius: 5px;
+  border-bottom: 1px solid #2122275e !important;
+}
+.card .cardBody:hover {
+  background-color: #ebecf0f3;
+  border-radius: 5px;
+  transition: all 100ms ease-out;
+}
+.cardBody .implementLine {
+  width: 40px;
+  height: 10px !important;
+  background-color: rgba(139, 7, 139, 0.616);
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.addCard {
+  font-size: 15px !important;
+  width: 14rem;
+}
+.addCard:hover {
+  background-color: #dadbe2 !important;
+  border: transparent !important;
+  box-shadow: none !important;
+}
