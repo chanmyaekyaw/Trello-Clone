@@ -1,0 +1,136 @@
+<!-- <div class="card m-3" style="width: 17rem;">
+        <div class="d-flex align-items-center justify-content-between">
+          <h5 class="pt-2" style="font-size: 14px">Trello Databases Changes</h5>
+          <button class="btn btn-sm text-muted m-1">
+            <i class="far fa-ellipsis-h"></i>
+          </button>
+        </div>
+
+        <div style="overflow: auto">
+          <div class="cardBody my-1">
+            <img
+              class="img-fluid rounded"
+              src="./assets/trello1.jpg"
+              alt="pic"
+              style="height: 10rem; width: 17rem"
+            />
+            <p class="m-1">[Create]&nbsp;Trello</p>
+            <button class="btn btn-sm">
+              <i class="fal fa-align-left"></i>
+            </button>
+            <button class="btn btn-sm">
+              <i class="fal fa-paperclip"></i>&nbsp;2
+            </button>
+            <button class="btn btn-sm">
+              <i class="fal fa-check-square"></i>&nbsp;0/3
+            </button>
+          </div>
+
+          <div class="cardBody my-1">
+            <div class="implementLine m-2"></div>
+            <p class="m-1">[Create]&nbsp;Trello&nbsp;2020-05-18</p>
+            <button class="btn btn-sm">
+              <i class="fal fa-align-left"></i>
+            </button>
+            <button class="btn btn-sm">
+              <i class="fal fa-paperclip"></i>&nbsp;1
+            </button>
+          </div>
+          <div class="cardBody my-1">
+            <div class="implementLine m-2"></div>
+            <p class="m-1">[Create]&nbsp;Trello&nbsp;2020-05-22</p>
+            <button class="btn btn-sm">
+              <i class="fal fa-align-left"></i>
+            </button>
+            <button class="btn btn-sm">
+              <i class="fal fa-paperclip"></i>&nbsp;1
+            </button>
+          </div>
+          <div class="cardBody my-1">
+            <div class="implementLine m-2"></div>
+            <p class="m-1">[Create]&nbsp;Trello&nbsp;2020-06-10</p>
+            <button class="btn btn-sm">
+              <i class="fal fa-align-left"></i>
+            </button>
+            <button class="btn btn-sm">
+              <i class="fal fa-paperclip"></i>&nbsp;2
+            </button>
+          </div>
+        </div>
+        <div class="d-flex my-2">
+          <button class="addCard btn">
+            <i class="fal fa-plus"></i>&nbsp;Add another Card
+          </button>
+          <button class="btn">
+            <i class="fas fa-clipboard-list"></i>
+          </button>
+        </div>
+      </div> -->
+
+<div class="trelloCard m-3" style="width: 17rem">
+  <div class="d-flex ml-2 align-items-center justify-content-between">
+    <h5 class="pt-2 ml-2" style="font-size: 14px">Trello REST API</h5>
+    <button class="btn btn-sm text-muted m-1">
+      <i class="far fa-ellipsis-h"></i>
+    </button>
+  </div>
+
+  <div style="overflow: auto">
+    <div class="cardBody mx-2 my-1">
+      <p class="m-1">Backend Local Server</p>
+      <button class="btn btn-sm">
+        <i class="fal fa-align-left"></i>
+      </button>
+      <button class="btn btn-sm">
+        <i class="fal fa-paperclip"></i>&nbsp;1
+      </button>
+      <button class="btn btn-sm"><i class="fa fa-github"></i>&nbsp;1</button>
+    </div>
+    <div class="cardBody mx-2 my-1">
+      <p class="m-1">[Create]&nbsp;Trello&nbsp;2020-05-22</p>
+      <button class="btn btn-sm">
+        <i class="fal fa-align-left"></i>
+      </button>
+      <button class="btn btn-sm">
+        <i class="fal fa-paperclip"></i>&nbsp;1
+      </button>
+    </div>
+    <!-- after click add card btn -->
+    <div class="cardBody mx-2 my-1 addCard">
+      <p class="m-1 text-muted">Enter a title for this card...</p>
+    </div>
+  </div>
+  <div class="d-flex m-2">
+    <button class="addCardBtn btn">
+      <i class="fal fa-plus"></i>&nbsp;Add another Card
+    </button>
+    <button class="btn">
+      <i class="fas fa-clipboard-list"></i>
+    </button>
+  </div>
+</div>
+<button class="addList btn btn-lg">
+  <i class="fal fa-plus"></i>&nbsp;Add another List
+</button>
+
+<div
+  class="card-body d-block mb-2"
+  data-toggle="modal"
+  data-target="#cardModal"
+  onclick="openCardModal(event)"
+>
+  <h6 class="trello-title">${card.title}</h6>
+  <div class="d-flex flex-wrap justify-content-between align-items-end">
+    <div class="d-flex flex-nowrap align-items-center">
+      To eat
+      <small class="d-inline-block m-1 mr-2 text-secondary"
+        ><i class="fa fa-bars"></i></small
+      ><small class="d-inline-block m-1 mr-2 text-secondary"
+        ><i class="fa fa-check-square-o"></i
+      ></small>
+    </div>
+    <div
+      class="d-flex flex-wrap justify-content-end flex-grow-1 align-items-center"
+    ></div>
+  </div>
+</div>

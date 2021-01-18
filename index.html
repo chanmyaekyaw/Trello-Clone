@@ -6,9 +6,9 @@
     <title>Trello Clone</title>
     <link rel="stylesheet" href="./css/index.css" type="text/css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
     <link
@@ -77,12 +77,12 @@
     <!-- ...................................................... -->
     <nav class="navbar navbarTwo d-flex justify-content-between">
       <div class="d-flex align-items-center">
-        <h4 class="fw-bold">Trello Clone</h4>
+        <h4 class="font-weight-bold">Trello Clone</h4>
         <button class="btn btn-sm text-dark my-1">
           <i class="far fa-star"></i>
         </button>
-        <h5 class="fw-normal">Private Team</h5>
-        <button class="btn btn-sm text-dark m-1 fw-normal">
+        <h5 class="font-weight-normal">Private Team</h5>
+        <button class="btn btn-sm text-dark m-1 font-weight-normal">
           <i class="fa fa-user-friends"></i>&nbsp;&nbsp;Team Visible&nbsp;
         </button>
         <div class="members ml-5">
@@ -122,116 +122,12 @@
       </div>
     </nav>
     <!-- .......................................................... -->
-    <div class="board row">
-      <div class="card m-3" style="width: 17rem; height: 30rem">
-        <div class="d-flex align-items-center justify-content-between">
-          <h5 class="pt-2" style="font-size: 14px">Trello Databases Changes</h5>
-          <button class="btn btn-sm text-muted m-1">
-            <i class="far fa-ellipsis-h"></i>
-          </button>
-        </div>
 
-        <div style="overflow: auto">
-          <div class="cardBody my-1">
-            <img
-              class="img-fluid rounded"
-              src="./assets/trello1.jpg"
-              alt="pic"
-              style="height: 10rem; width: 17rem"
-            />
-            <p class="m-1">[Create]&nbsp;Trello</p>
-            <button class="btn btn-sm">
-              <i class="fal fa-align-left"></i>
-            </button>
-            <button class="btn btn-sm">
-              <i class="fal fa-paperclip"></i>&nbsp;2
-            </button>
-            <button class="btn btn-sm">
-              <i class="fal fa-check-square"></i>&nbsp;0/3
-            </button>
-          </div>
+    <div class="d-flex" id="wrapper">
+      <h6>Loading...</h6>
 
-          <div class="cardBody my-1">
-            <div class="implementLine m-2"></div>
-            <p class="m-1">[Create]&nbsp;Trello&nbsp;2020-05-18</p>
-            <button class="btn btn-sm">
-              <i class="fal fa-align-left"></i>
-            </button>
-            <button class="btn btn-sm">
-              <i class="fal fa-paperclip"></i>&nbsp;1
-            </button>
-          </div>
-          <div class="cardBody my-1">
-            <div class="implementLine m-2"></div>
-            <p class="m-1">[Create]&nbsp;Trello&nbsp;2020-05-22</p>
-            <button class="btn btn-sm">
-              <i class="fal fa-align-left"></i>
-            </button>
-            <button class="btn btn-sm">
-              <i class="fal fa-paperclip"></i>&nbsp;1
-            </button>
-          </div>
-          <div class="cardBody my-1">
-            <div class="implementLine m-2"></div>
-            <p class="m-1">[Create]&nbsp;Trello&nbsp;2020-06-10</p>
-            <button class="btn btn-sm">
-              <i class="fal fa-align-left"></i>
-            </button>
-            <button class="btn btn-sm">
-              <i class="fal fa-paperclip"></i>&nbsp;2
-            </button>
-          </div>
-        </div>
-        <div class="d-flex my-2">
-          <button class="addCard btn">
-            <i class="fal fa-plus"></i>&nbsp;Add another Card
-          </button>
-          <button class="btn">
-            <i class="fas fa-clipboard-list"></i>
-          </button>
-        </div>
-      </div>
       <!-- ............. -->
-      <div class="card m-3" style="width: 17rem; height: auto !important">
-        <div class="d-flex align-items-center justify-content-between">
-          <h5 class="pt-2" style="font-size: 14px">Trello REST API</h5>
-          <button class="btn btn-sm text-muted m-1">
-            <i class="far fa-ellipsis-h"></i>
-          </button>
-        </div>
-
-        <div style="overflow: auto">
-          <div class="cardBody my-1">
-            <p class="m-1">Backend Local Server</p>
-            <button class="btn btn-sm">
-              <i class="fal fa-align-left"></i>
-            </button>
-            <button class="btn btn-sm">
-              <i class="fal fa-paperclip"></i>&nbsp;1
-            </button>
-            <button class="btn btn-sm">
-              <i class="fa fa-github"></i>&nbsp;1
-            </button>
-          </div>
-          <div class="cardBody my-1">
-            <p class="m-1">[Create]&nbsp;Trello&nbsp;2020-05-22</p>
-            <button class="btn btn-sm">
-              <i class="fal fa-align-left"></i>
-            </button>
-            <button class="btn btn-sm">
-              <i class="fal fa-paperclip"></i>&nbsp;1
-            </button>
-          </div>
-        </div>
-        <div class="d-flex my-2">
-          <button class="addCard btn">
-            <i class="fal fa-plus"></i>&nbsp;Add another Card
-          </button>
-          <button class="btn">
-            <i class="fas fa-clipboard-list"></i>
-          </button>
-        </div>
-      </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>

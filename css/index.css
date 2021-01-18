@@ -107,6 +107,7 @@ body {
   margin: 0 !important;
 }
 /* ............................................ */
+
 .card {
   background-color: #ebecf0 !important;
 }
@@ -119,29 +120,36 @@ p {
   box-shadow: none !important;
   color: #2f31359f;
 }
-.cardBody {
+.card-body {
   background: #fff;
   border-radius: 5px;
   border-bottom: 1px solid #2122275e !important;
 }
-.card .cardBody:hover {
+.card .card-body:hover {
   background-color: #ebecf0f3;
   border-radius: 5px;
   transition: all 100ms ease-out;
 }
-.cardBody .implementLine {
+.card-body .implementLine {
   width: 40px;
   height: 10px !important;
   background-color: rgba(139, 7, 139, 0.616);
   border-radius: 5px;
   margin-left: 10px;
 }
-.addCard {
+.addCardBtn {
   font-size: 15px !important;
   width: 14rem;
 }
-.addCard:hover {
+.addCardBtn:hover {
   background-color: #dadbe2 !important;
   border: transparent !important;
   box-shadow: none !important;
+}
+.addList {
+  max-width: 17rem;
+  background-color: rgba(255, 255, 255, 0.411);
+}
+.addCard {
+  height: 60px;
 }
